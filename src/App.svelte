@@ -68,7 +68,7 @@
 
 <main class="bg-white dark:bg-neutral-900 min-h-screen flex flex-col">
 	<Header on:search={handleSearch}/>
-	<div class="grid grid-cols-4 p-4 gap-4 max-h-screen overflow-y-scroll scrollbar-thin dark:scrollbar-thumb-neutral-600 scrollbar-thumb-neutral-300 scrollbar-track-transparent">
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 gap-4 max-h-screen overflow-y-scroll scrollbar-thin dark:scrollbar-thumb-neutral-600 scrollbar-thumb-neutral-300 scrollbar-track-transparent">
 		{#if !search}
 			<NewNote on:new={newNote}/>
 		{/if}
