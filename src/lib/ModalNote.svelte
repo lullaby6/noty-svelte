@@ -30,9 +30,6 @@
                 <div on:click={e => {showModal = false}} class="absolute top-0 right-0 m-2">
                     <Icon class="text-4xl dark:text-white text-neutral-800 dark:opacity-10 dark:hover:opacity-100 opacity-50 dark:opacity-10 hover:opacity-100 cursor-pointer" icon="iconamoon:close" />
                 </div>
-                <!-- <div class="flex justify-end gap-2">
-                    
-                </div> -->
             </div>
         </Modal>
     {/if}

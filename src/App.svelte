@@ -1,4 +1,4 @@
-<script>	
+<script>
 	import Header from "./lib/Header.svelte"
 	import NewNote from "./lib/NewNote.svelte"
 	import Note from "./lib/Note.svelte"
@@ -36,13 +36,13 @@
 	}
 
 	function handleSearch({detail}){
-		const q = detail.trim()
+		const q = detail.trim().toLowerCase()
 		if(q == ''){
 			notes = [...allNotes]
 			search = false
 			return false
 		}
-		
+
 		notes = allNotes.filter(note => {
 			const title = note.title.toLowerCase()
 			const text = note.text.toLowerCase()

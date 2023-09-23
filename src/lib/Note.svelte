@@ -21,8 +21,8 @@
 
         function handleUpdate(e){
             dispatch('update', {
-                id, 
-                title, 
+                id,
+                title,
                 text,
                 scrollHeight: textareaElement.scrollHeight
             })
@@ -30,8 +30,8 @@
 
         function openModal(e){
             dispatch('modal', {
-                id, 
-                title, 
+                id,
+                title,
                 text
             })
         }
